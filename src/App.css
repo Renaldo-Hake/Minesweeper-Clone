@@ -1,38 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .App {
-  text-align: center;
+    background-image: url("./Images/background.png");
+    background-size: cover;
+    background-position: center;
+
+    height: 100vh;
+    width: 100%;
+
+    text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App h1 {
+    padding: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.layout {
+    display: flex;
+    justify-content: space-around;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.timer{ 
+    margin-left: 0px;
+    margin-top: 100px;
 }
 
-.App-link {
-  color: #61dafb;
+.mineCount {
+    margin-top: 100px;
+    padding-right: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.status {
+    font-size: 15px;
+}
+
+.board{
+    display: inline-grid;
+    grid-template-columns: repeat(10, 30px);
+    grid-template-rows: repeat(10, 30px);
+    gap: 4px;
+    background-color: rgb(105, 100, 100);
+    padding: 10px;
+}
+
+.Cell {
+    background-color: grey;
+    width: 100%;
+    height: 100%;
+    margin: 1px;
+    font-weight: bolder;
+}
+
+.Cell:focus{
+    outline: none;
+}
+
+.hidden {
+    background-color: blue;
+}
+
+.mine {
+    background-color: red;
+}
+
+.button {
+    padding: 10px 15px;
+    margin: 15px;
+    background-color: blue;
+    color: white;
+    border: 5px solid rgb(105, 100, 100);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+#Help {
+    display: none;
+    padding: 50px;
+    width: 50%;
+    background-color: cyan;
+    border-radius: 15px;
+}
+
+#Help ul {
+    text-align: left;
+    line-height: 1.5em;
+    padding: 15px;
+}
+
+.Timer {
+    position: absolute;
+    bottom: 200px;
+    text-align: center;
+    background-color: cyan;
+    padding: 20px 30px;
+    border-radius: 15px;
 }
