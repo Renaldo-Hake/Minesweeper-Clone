@@ -93,11 +93,8 @@ Don't forget to give the project a star! Thanks again!
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-<!-- CONTACT -->
-## Contact
-
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
-
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+<!-- Link -->
+## Link
+Project Link: [https://github.com/Renaldo-Hake/Minesweeper-Clone.git](https://github.com/Renaldo-Hake/Minesweeper-Clone.git)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
